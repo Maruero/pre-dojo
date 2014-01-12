@@ -1,2 +1,12 @@
-Coloque aqui suas instruções ou comentários que ache útil/relevantes para possamos ler 
-quando estivermos avaliando a sua solução
+Primeiramente, gostaria de agradecer: muito obrigado pela oportunidade, e pelo possibilidade de tentar resolver desse teste.
+
+Para executar o teste, o caminho do arquivo de log deve ser passado como parâmetro para o classe principal do projeto "Application".
+Tem no conteúdo do projeto um exemplo de arquivo de log para a execução do projeto.
+
+Sobre o TDD gostaria apenas de mencionar que prefiro a linha que acredita que a Orientação a Objetos deve ser priorizada acima do TDD quando estiver criando os testes unitários.
+ - Isso quer dizer, por exemplo, que não sou a favor de tornar os métodos público de uma classe apenas para que seja possível chamá-los dos testes unitários.
+ - Prefiro, nestes casos, invocá-los usando reflection.
+ 
+Abraço,
+--
+Marcelo Dias

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration 
+	xmlns:log4j="http://jakarta.apache.org/log4j/" 
+	debug="false">
+
+	   <!-- ================================= -->
+	   <!-- Preserve messages in a local file -->
+	   <!-- ================================= -->
+
+	
+	<appender name="fileLog" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="logs/file.log" />
+		<param name="Append" value="true" />
+		<param name="maxFileSize" value="1MB" />
+		<param name="maxBackupIndex" value="100" />
+		<param name="threshold" value="info" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{dd/MM/yyyy HH:mm:ss} %-5p [%c{1}] - %m%n" />
+		</layout>
+	</appender>
+
+	<category name="br.com.test.ranking">
+   		<level value="ALL"/>
+   		<appender-ref ref="fileLog"/>
+    </category>
+
+</log4j:configuration>
